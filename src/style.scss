@@ -72,3 +72,119 @@
 
 }
 
+.home{
+    background-color: #8ee4af;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .container{
+        border: 1px solid white;
+        border-radius: 10px;
+        height: 65%;
+        width: 80%;
+        display: flex;
+        overflow: hidden;
+
+        .sidebar{ 
+            flex: 1;
+            background-color: #2a2f46;
+
+            .navbar{
+                display: flex;
+                align-items: center;
+                background-color: #091341;
+                color: aliceblue;
+                padding: 10px;
+                justify-content: space-between;
+
+                .logo{
+                  font-weight: bold;
+                }
+
+                .user{
+                   display: flex;
+                   gap: 10px;
+
+                    img{
+                        background-color: aliceblue;
+                        height: 24px;
+                        width: 24px;
+                        border-radius: 50%;
+                        object-fit: cover;
+
+                    }
+
+                    button{
+                        background-color: #2a2f46;
+                        color: aliceblue;
+                        cursor: pointer;
+                        border: none;
+                    }
+
+                }
+                
+            }
+
+            .search{
+                border: 1px solid gray;
+
+                .searchForm{
+                   padding: 10px;
+
+                    input{
+                        background-color: transparent;
+                        color: aliceblue;
+                        border: none;
+                        outline: none;
+
+                        &::placeholder{
+                            color: gray;
+                        }
+                    }
+
+                }
+            }
+
+            .userChat{
+                padding: 10px;
+                align-items: center;
+                gap: 10px;
+                display: flex;
+                cursor: pointer;
+                color: white;
+                
+                &:hover{
+                    background-color: #091341;
+                }
+                
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+
+                }
+
+                .userChatInfo{
+                    span{
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+
+                    p{
+                        font-size: 14px;
+                        color: lightgray;
+                    }
+                }
+            }
+            
+        }
+
+        .chat{
+            flex: 2;
+        }
+    }
+}
+
